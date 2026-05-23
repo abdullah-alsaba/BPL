@@ -1,5 +1,7 @@
 import logoImg from "../../assets/logo.png";
 import dollarImg from "../../assets/dollar_1.png";
+import "../../index.css";
+
 
 const Navbar = () => {
   return (
