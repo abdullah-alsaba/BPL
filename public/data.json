@@ -8,7 +8,7 @@
     "bowlingStyle": "Right-Arm Medium",
     "rating": 98,
     "price": 1500000,
-    "image": "https://i.ibb.co/3y0W3kB/virat.jpg"
+    "image": "https://i.ibb.co.com/sdMDTs3W/image.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "bowlingStyle": "Right-Arm Fast",
     "rating": 85,
     "price": 1500000,
-    "image": "https://i.ibb.co/jk8F8nM/player1.jpg"
+    "image": "https://i.ibb.co.com/1GdXMZCr/image.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "bowlingStyle": "Leg Break",
     "rating": 92,
     "price": 1800000,
-    "image": "https://i.ibb.co/ZYW3VTp/steve-smith.jpg"
+    "image": "https://i.ibb.co.com/4nV4xxNN/image.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "bowlingStyle": "Right-Arm Fast",
     "rating": 95,
     "price": 2200000,
-    "image": "https://i.ibb.co/L6m5LQp/ben-stokes.jpg"
+    "image": "https://i.ibb.co.com/ZRL24HfC/image.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "bowlingStyle": "Off Break",
     "rating": 94,
     "price": 1700000,
-    "image": "https://i.ibb.co/q0Q9Y0m/babar.jpg"
+    "image": "https://i.ibb.co.com/cc2xgXRf/image.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "bowlingStyle": "Slow Left-Arm Orthodox",
     "rating": 91,
     "price": 1600000,
-    "image": "https://i.ibb.co/7nQp14v/shakib.jpg"
+    "image": "https://i.ibb.co.com/4ZSzp3x5/image.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "bowlingStyle": "Off Break",
     "rating": 90,
     "price": 1750000,
-    "image": "https://i.ibb.co/2h8Yw0D/kane.jpg"
+    "image": "https://i.ibb.co.com/bg9z22NC/image.png"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "bowlingStyle": "Right-Arm Fast",
     "rating": 96,
     "price": 2100000,
-    "image": "https://i.ibb.co/Fm0nL8B/bumrah.jpg"
+    "image": "https://i.ibb.co.com/KcmjrfYj/image.png"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "bowlingStyle": "Left-Arm Fast",
     "rating": 89,
     "price": 1650000,
-    "image": "https://i.ibb.co/0Jmshvb/boult.jpg"
+    "image": "https://i.ibb.co.com/hx1jsB6s/image.png"
   },
   {
     "id": 10,
@@ -107,6 +107,6 @@
     "bowlingStyle": "None",
     "rating": 93,
     "price": 1900000,
-    "image": "https://i.ibb.co/Y0s3V2p/buttler.jpg"
+    "image": "https://i.ibb.co.com/PG2MFchc/image.png"
   }
 ]
