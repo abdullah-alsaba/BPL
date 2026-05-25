@@ -1,6 +1,6 @@
 import { use } from "react";
 import "../../index.css"
-import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
+import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 const Players = ({ playerPromise }) => {
     const players = use(playerPromise);
     

@@ -6,7 +6,7 @@
     "role": "Batsman",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-Arm Medium",
-    "rating": 98,
+    "rating": 9.8,
     "price": 1500000,
     "image": "https://i.ibb.co.com/sdMDTs3W/image.png"
   },
@@ -17,7 +17,7 @@
     "role": "All-Rounder",
     "battingStyle": "Left-Hand-Bat",
     "bowlingStyle": "Right-Arm Fast",
-    "rating": 85,
+    "rating": 8.5,
     "price": 1500000,
     "image": "https://i.ibb.co.com/1GdXMZCr/image.png"
   },
@@ -28,7 +28,7 @@
     "role": "Batsman",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Leg Break",
-    "rating": 92,
+    "rating": 9.2,
     "price": 1800000,
     "image": "https://i.ibb.co.com/4nV4xxNN/image.png"
   },
@@ -39,7 +39,7 @@
     "role": "All-Rounder",
     "battingStyle": "Left-Hand-Bat",
     "bowlingStyle": "Right-Arm Fast",
-    "rating": 95,
+    "rating": 9.5,
     "price": 2200000,
     "image": "https://i.ibb.co.com/ZRL24HfC/image.png"
   },
@@ -50,7 +50,7 @@
     "role": "Batsman",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Off Break",
-    "rating": 94,
+    "rating": 9.4,
     "price": 1700000,
     "image": "https://i.ibb.co.com/cc2xgXRf/image.png"
   },
@@ -60,8 +60,8 @@
     "country": "Bangladesh",
     "role": "All-Rounder",
     "battingStyle": "Left-Hand-Bat",
-    "bowlingStyle": "Slow Left-Arm Orthodox",
-    "rating": 91,
+    "bowlingStyle": "Slow Left-Arm",
+    "rating": 9.1,
     "price": 1600000,
     "image": "https://i.ibb.co.com/4ZSzp3x5/image.png"
   },
@@ -72,7 +72,7 @@
     "role": "Batsman",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Off Break",
-    "rating": 90,
+    "rating": 9.0,
     "price": 1750000,
     "image": "https://i.ibb.co.com/bg9z22NC/image.png"
   },
@@ -83,7 +83,7 @@
     "role": "Bowler",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Right-Arm Fast",
-    "rating": 96,
+    "rating": 9.6,
     "price": 2100000,
     "image": "https://i.ibb.co.com/KcmjrfYj/image.png"
   },
@@ -94,7 +94,7 @@
     "role": "Bowler",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "Left-Arm Fast",
-    "rating": 89,
+    "rating": 8.9,
     "price": 1650000,
     "image": "https://i.ibb.co.com/hx1jsB6s/image.png"
   },
@@ -105,7 +105,7 @@
     "role": "Wicket-Keeper",
     "battingStyle": "Right-Hand-Bat",
     "bowlingStyle": "None",
-    "rating": 93,
+    "rating": 9.3,
     "price": 1900000,
     "image": "https://i.ibb.co.com/PG2MFchc/image.png"
   }
