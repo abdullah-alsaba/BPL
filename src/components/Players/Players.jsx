@@ -4,7 +4,8 @@ import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 const Players = ({ playerPromise, coin, setCoin }) => {
     const players = use(playerPromise);
-    const [available, setAvailable] = useState("available");
+  const [available, setAvailable] = useState("available");
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 mb-20">
@@ -34,9 +35,13 @@ const Players = ({ playerPromise, coin, setCoin }) => {
           players={players}
           coin={coin}
           setCoin={setCoin}
+          setSelectedPlayers={setSelectedPlayers}
+          selectedPlayers={selectedPlayers}
         ></AvailablePlayers>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+        ></SelectedPlayers>
       )}
     </div>
   );

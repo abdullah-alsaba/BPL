@@ -1,11 +1,10 @@
 import "../../../index.css"
 
-const SelectedPlayers = () => {
-    return (
-        <div>
-            jhdgsherguhgnkjshgih
-        </div>
-    );
+const SelectedPlayers = ({ selectedPlayers }) => {
+  
+    return <div>
+      
+  </div>;
 };
 
 export default SelectedPlayers;

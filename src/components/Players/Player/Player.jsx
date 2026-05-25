@@ -3,27 +3,27 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
 import {toast } from "react-toastify";
 
-const Player = ({ player, coin, setCoin }) => {
+const Player = ({
+  player,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   const [isselected, setIsselected] = useState(false);
 
   const handelClick = () => {
     let newCoin = coin - player.price;
     if (coin >= player.price) {
-      setCoin(newCoin)
+      setCoin(newCoin);
       toast.success("Player is Selected!!");
-        setIsselected(true);
-      
+      setIsselected(true);
+    } else {
+      toast.error("Sorry, you don't have enough coin");
     }
-    else {
-      toast.error("Sorry, you don't have enough coin")
-    }
-    
-  
-  
+
+    setSelectedPlayers([...selectedPlayers, player])
   };
-
-
-
 
   return (
     <div className="border border-gray-200 rounded-2xl p-4 bg-white shadow-sm">
@@ -83,7 +83,6 @@ const Player = ({ player, coin, setCoin }) => {
           </button>
         </div>
       </div>
-      
     </div>
   );
 };

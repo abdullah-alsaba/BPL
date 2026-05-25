@@ -2,7 +2,13 @@
 import "../../../index.css"
 import Player from "../Player/Player";
 
-const AvailablePlayers = ({ players, coin, setCoin }) => {
+const AvailablePlayers = ({
+  players,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {players.map((player) => (
@@ -11,6 +17,8 @@ const AvailablePlayers = ({ players, coin, setCoin }) => {
           player={player}
           coin={coin}
           setCoin={setCoin}
+          setSelectedPlayers={setSelectedPlayers}
+          selectedPlayers={selectedPlayers}
         ></Player>
       ))}
     </div>
