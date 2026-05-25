@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
-import {toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Player = ({
   player,
@@ -10,19 +9,18 @@ const Player = ({
   selectedPlayers,
   setSelectedPlayers,
 }) => {
-  const [isselected, setIsselected] = useState(false);
+  const isselected = selectedPlayers.some((p) => p.id === player.id);
 
   const handelClick = () => {
     let newCoin = coin - player.price;
     if (coin >= player.price) {
       setCoin(newCoin);
       toast.success("Player is Selected!!");
-      setIsselected(true);
     } else {
       toast.error("Sorry, you don't have enough coin");
     }
 
-    setSelectedPlayers([...selectedPlayers, player])
+    setSelectedPlayers([...selectedPlayers, player]);
   };
 
   return (

@@ -13,7 +13,9 @@ const Players = ({ playerPromise, coin, setCoin }) => {
         {available === "available" ? (
           <h1 className="font-bold text-2xl">Available Players</h1>
         ) : (
-          <h1 className="font-bold text-2xl">Selected Players</h1>
+          <h1 className="font-bold text-2xl">
+            Selected Players({selectedPlayers.length}/{players.length})
+          </h1>
         )}
         <div>
           <button
@@ -26,7 +28,7 @@ const Players = ({ playerPromise, coin, setCoin }) => {
             onClick={() => setAvailable("selected")}
             className={`btn ${available === "selected" ? "btn-primary" : "btn"} rounded-l-none`}
           >
-            Selected (0)
+            Selected ({selectedPlayers.length})
           </button>
         </div>
       </div>
@@ -39,9 +41,7 @@ const Players = ({ playerPromise, coin, setCoin }) => {
           selectedPlayers={selectedPlayers}
         ></AvailablePlayers>
       ) : (
-        <SelectedPlayers
-          selectedPlayers={selectedPlayers}
-        ></SelectedPlayers>
+        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
       )}
     </div>
   );
