@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
 
 const Player = ({ player }) => {
+  const [isselected, setIsselected] = useState(false);
   return (
     <div className="border border-gray-200 rounded-2xl p-4 bg-white shadow-sm">
       {/* Image */}
@@ -50,8 +52,12 @@ const Player = ({ player }) => {
         <div className="flex items-center justify-between mt-5">
           <p className="font-semibold text-black">Price: ${player.price}</p>
 
-          <button className="border border-gray-300 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition cursor-pointer">
-            Choose Player
+          <button
+            className="btn px-4 py-2  cursor-pointer"
+            onClick={() => setIsselected(true)}
+            disabled={isselected ? true : false}
+          >
+            {isselected ? "Selected" : "Choose Player"}
           </button>
         </div>
       </div>
