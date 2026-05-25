@@ -2,12 +2,12 @@ import { use, useState } from "react";
 import "../../index.css";
 import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
-const Players = ({ playerPromise }) => {
+const Players = ({ playerPromise, coin, setCoin }) => {
     const players = use(playerPromise);
     const [available, setAvailable] = useState("available");
 
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4 mb-20">
       <div className="flex justify-between items-center mb-6">
         {available === "available" ? (
           <h1 className="font-bold text-2xl">Available Players</h1>
@@ -29,7 +29,15 @@ const Players = ({ playerPromise }) => {
           </button>
         </div>
       </div>
-      {available==="available"? <AvailablePlayers players={players}></AvailablePlayers>:<SelectedPlayers></SelectedPlayers>}
+      {available === "available" ? (
+        <AvailablePlayers
+          players={players}
+          coin={coin}
+          setCoin={setCoin}
+        ></AvailablePlayers>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
     </div>
   );
 };

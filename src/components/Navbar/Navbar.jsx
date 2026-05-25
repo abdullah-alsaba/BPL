@@ -3,7 +3,7 @@ import dollarImg from "../../assets/dollar_1.png";
 import "../../index.css";
 
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-5">
       <div className="navbar bg-base-100">
@@ -30,7 +30,7 @@ const Navbar = () => {
           </ul>
 
           <button className="btn bg-white border rounded-xl font-bold px-5">
-            0 Coin
+            {coin} Coin
             <img src={dollarImg} alt="Dollar icon" className="w-5" />
           </button>
         </div>
