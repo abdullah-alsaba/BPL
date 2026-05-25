@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import "../../index.css";
 import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 const Players = ({ playerPromise }) => {
     const players = use(playerPromise);
     const [available, setAvailable] = useState("available");
@@ -28,7 +29,7 @@ const Players = ({ playerPromise }) => {
           </button>
         </div>
       </div>
-      <AvailablePlayers players={players}></AvailablePlayers>
+      {available==="available"? <AvailablePlayers players={players}></AvailablePlayers>:<SelectedPlayers></SelectedPlayers>}
     </div>
   );
 };
