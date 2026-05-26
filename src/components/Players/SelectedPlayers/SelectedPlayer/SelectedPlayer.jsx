@@ -31,7 +31,7 @@ const SelectedPlayer = ({
             </figure>
             <div>
               <h1 className="text-lg font-semibold text-black">
-                {selectedPlayer.name}{" "}
+                {selectedPlayer.name}
               </h1>
               <p className="text-sm text-gray-500 mt-1">
                 {selectedPlayer.battingStyle}
