@@ -11,15 +11,13 @@ const SelectedPlayers = ({
   setSelectedPlayers,
   coin,
   setCoin,
+  setAvailable
 }) => {
-
-
-  
   return (
     <div>
       <div>
         {selectedPlayers.length === 0 ? (
-          <NoSelectedPlayer></NoSelectedPlayer>
+          <NoSelectedPlayer setAvailable={setAvailable}></NoSelectedPlayer>
         ) : (
           selectedPlayers.map((selectedPlayer) => (
             <SelectedPlayer
@@ -32,7 +30,6 @@ const SelectedPlayers = ({
             ></SelectedPlayer>
           ))
         )}
-
       </div>
     </div>
   );

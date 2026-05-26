@@ -1,7 +1,10 @@
 import { FaUsersSlash } from "react-icons/fa";
 import "../../../../../index.css";
 
-const NoSelectedPlayer = () => {
+const NoSelectedPlayer = ({ setAvailable }) => {
+  const handelAvailablePage=()=>{
+      setAvailable("available")
+    }
   return (
     <div className="flex flex-col items-center justify-center py-20 px-6 border border-dashed border-gray-300 rounded-3xl bg-white shadow-sm">
       {/* Icon */}
@@ -21,7 +24,7 @@ const NoSelectedPlayer = () => {
       </p>
 
       {/* Button */}
-      <button className="mt-8 bg-[#E7FE29] hover:bg-lime-300 transition px-6 py-3 rounded-xl font-semibold text-black shadow-sm">
+      <button className="mt-8 bg-[#E7FE29] hover:bg-lime-300 transition px-6 py-3 rounded-xl font-semibold text-black shadow-sm cursor-pointer" onClick={() =>handelAvailablePage()}>
         Go To Available Players
       </button>
     </div>
