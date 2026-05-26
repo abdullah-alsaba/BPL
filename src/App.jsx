@@ -5,6 +5,8 @@ import './index.css'
 import Players from "./components/Players/Players"
 import Loading from "./components/Loading/Loading"
 import { ToastContainer } from "react-toastify"
+import Footer from "./components/Footer/Footer"
+import Newsletter from "./components/NewsLetter/Newsletter"
 
 
 const fetchPlayer = async () => {
@@ -29,6 +31,12 @@ function App() {
           setCoin={setCoin}
         ></Players>
       </Suspense>
+      <div className="relative z-10">
+        <Newsletter />
+      </div>
+
+      
+      <Footer />
       <ToastContainer></ToastContainer>
     </>
   );
