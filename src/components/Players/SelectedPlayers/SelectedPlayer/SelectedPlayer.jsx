@@ -1,8 +1,19 @@
 import { RiDeleteBin5Line } from "react-icons/ri";
 import "../../../../index.css";
 
-const SelectedPlayer = ({ selectedPlayer }) => {
-  console.log(selectedPlayer);
+
+const SelectedPlayer = ({
+  selectedPlayer,
+  setSelectedPlayers,
+  selectedPlayers,
+}) => {
+  const handelDeleteSelectedPlayer = (selectedPlayer) => {
+    const filterPlayer = selectedPlayers.filter(
+      (player) => player.name != selectedPlayer.name,
+    );
+    setSelectedPlayers(filterPlayer)
+  };
+
   return (
     <>
       <div className=" border border-gray-50 shadow-sm rounded-2xl mb-4 bg-white">
@@ -24,7 +35,11 @@ const SelectedPlayer = ({ selectedPlayer }) => {
               </p>
             </div>
           </div>
-          <button type="button" className="flex items-center justify-center">
+          <button
+            type="button"
+            className="flex items-center justify-center"
+            onClick={() => handelDeleteSelectedPlayer(selectedPlayer)}
+          >
             <RiDeleteBin5Line className="text-red-500 text-lg cursor-pointer" />
           </button>
         </div>
