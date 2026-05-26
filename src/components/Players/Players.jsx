@@ -44,6 +44,8 @@ const Players = ({ playerPromise, coin, setCoin }) => {
         <SelectedPlayers
           selectedPlayers={selectedPlayers}
           setSelectedPlayers={setSelectedPlayers}
+          coin={coin}
+          setCoin={setCoin}
         ></SelectedPlayers>
       )}
     </div>

@@ -6,12 +6,15 @@ const SelectedPlayer = ({
   selectedPlayer,
   setSelectedPlayers,
   selectedPlayers,
+  coin,
+  setCoin
 }) => {
   const handelDeleteSelectedPlayer = (selectedPlayer) => {
     const filterPlayer = selectedPlayers.filter(
       (player) => player.name != selectedPlayer.name,
     );
     setSelectedPlayers(filterPlayer)
+    setCoin(coin + selectedPlayer.price)
   };
 
   return (

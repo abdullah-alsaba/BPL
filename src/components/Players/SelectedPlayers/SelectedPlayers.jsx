@@ -3,7 +3,9 @@ import SelectedPlayer from "./SelectedPlayer/SelectedPlayer";
 
 const SelectedPlayers = ({
   selectedPlayers,
-  setSelectedPlayers
+  setSelectedPlayers,
+  coin,
+  setCoin 
 }) => {
   const handelPage = () => {};
   return (
@@ -15,6 +17,8 @@ const SelectedPlayers = ({
             selectedPlayer={selectedPlayer}
             setSelectedPlayers={setSelectedPlayers}
             selectedPlayers={selectedPlayers}
+            coin={coin}
+            setCoin={setCoin}
           ></SelectedPlayer>
         ))}
 
